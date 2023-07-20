@@ -10,7 +10,7 @@ an integral part of the Privacy Policy Network Service Use Agreement. You do not
 with the personal information we request, but in many cases, if you choose not to do so, we will not
 be able to provide you with our products or services or respond to any questions you may have. If
 you have any questions about the data processing practices described in this Privacy Policy, please
-contact us at [maatierra@outlook.com](mailto:maatierra@outlook.com) so that we can address your specific needs. We are
+contact us at [aryavartcreations@outlook.com](mailto:aryavartcreations@outlook.com) so that we can address your specific needs. We are
 happy to receive your feedback.
 
 <h3> I. How we collect information</h3>
@@ -38,7 +38,7 @@ Any changes, by your consent, you agree to be bound by this policy as amended
 The constraints.
 <h3>Vii. How to contact us</h3>
 If you have any questions, comments or suggestions regarding this Privacy Policy, you may
-Contact us by email: maatierra@outlook.com If you are not satisfied with our response, especially with our personal information
+Contact us by email: aryavartcreations@outlook.com If you are not satisfied with our response, especially with our personal information
 You may also be able to address your legal rights by filing a complaint with us.
 Seeking resolution by filing a lawsuit in the people's court of competent jurisdiction
 Program.
