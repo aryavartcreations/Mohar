@@ -10,7 +10,7 @@ Preserving your intellectual property and preventing unauthorized use of your im
 
 # For Developers
 
-
+We have created a library called "Mohar" library which can be used to add watermarks to images in Kotlin.
 
 <h1 align="center">Privacy Policy</h1>
 
