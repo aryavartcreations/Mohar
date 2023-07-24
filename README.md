@@ -8,9 +8,26 @@ Moreover, the best part about Mohar is that it comes absolutely free of charge, 
 
 Preserving your intellectual property and preventing unauthorized use of your images has never been easier. With Mohar by your side, you can confidently share your work online, knowing that your creativity is safeguarded from misuse. Experience the seamless integration of security and artistry with Mohar - the ultimate watermarking app.
 
-# For Developers
+# Mohar SDK
 
-We have created a library called "Mohar" library which can be used to add watermarks to images in Kotlin.
+We have created a library to add watermarks into images using Kotlin. 
+
+## Installation
+
+Add these in your `build.gradle` file:
+
+```gradle
+dependencies {
+        implementation 'com.github.enginestein:Mohar-SDK:1.0.0'
+}
+
+allprojects {
+    repositories {
+        // ...
+        maven { url 'https://jitpack.io' }
+    }
+```
+
 
 <h1 align="center">Privacy Policy</h1>
 
