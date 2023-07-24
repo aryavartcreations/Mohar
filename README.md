@@ -8,6 +8,10 @@ Moreover, the best part about Mohar is that it comes absolutely free of charge, 
 
 Preserving your intellectual property and preventing unauthorized use of your images has never been easier. With Mohar by your side, you can confidently share your work online, knowing that your creativity is safeguarded from misuse. Experience the seamless integration of security and artistry with Mohar - the ultimate watermarking app.
 
+# For Developers
+
+
+
 <h1 align="center">Privacy Policy</h1>
 
 The Privacy Policy respects and protects the individual privacy of all users of the Privacy Policy
