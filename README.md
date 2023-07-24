@@ -10,24 +10,166 @@ Preserving your intellectual property and preventing unauthorized use of your im
 
 # Mohar SDK
 
-We have created a library to add watermarks into images using Kotlin. 
+We have created a library to add watermarks to images using Kotlin.
 
 ## Installation
 
-Add these in your `build.gradle` file:
+Add the following lines to your `build.gradle` file:
 
 ```gradle
 dependencies {
-        implementation 'com.github.enginestein:Mohar-SDK:1.0.0'
+    implementation 'com.github.enginestein:Mohar-SDK:1.0.0'
 }
 
 allprojects {
     repositories {
-        // ...
         maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
+## Usage
+
+To use the SDK, you need to perform the following steps:
+
+1. Specify the activity from which you want to show the watermark (`AppCompatActivity`). This is mandatory.
+2. Set the layout resource that you want to use as the watermark. This is mandatory.
+3. Optionally, you can specify a background color for the watermark. If omitted, the background color of your defined layout resource will be used.
+4. Optionally, you can set the opacity of the background color. The default opacity is 50, but it is advised not to set it above 80 to avoid interfering with the main UI or content visibility.
+
+### Java
+
+```java
+AppWaterMarkBuilder.doConfigure()
+    .setAppCompatActivity(MainActivity.this)
+    .setWatermarkProperty(R.layout.layout_water_mark)
+    // You can also set opacity or opacity with a default background color.
+    // Just call like that ".setWatermarkProperty(R.layout.layout_water_mark, 40, R.color.colorAccent)"
+    .showAlsoOutsideOfTheApp() // Optional: Call it if you want to show the watermark globally over other apps.
+    .showWatermarkAfterConfig(new WatermarkListener() { // This callback is also optional.
+        @Override
+        public void onSuccess() {
+            Log.d(TAG, "Successfully showing watermark");
+        }
+
+        @Override
+        public void onFailure(String message, Throwable throwable) {
+            Log.d(TAG, "Failed: " + message);
+        }
+
+        @Override
+        public void showLog(String log, @Nullable Throwable throwable) {
+            Log.d(TAG, "Log: " + log);
+        }
+    });
+
+// Then you can hide and show the watermark from anywhere in your app.
+
+// For hiding the watermark without a callback
+AppWaterMarkBuilder.hideWatermark();
+
+// For hiding the watermark with a callback
+AppWaterMarkBuilder.hideWatermark(new WatermarkListener() {
+    @Override
+    public void onSuccess() {
+        Log.d(TAG, "Successfully hiding watermark");
+    }
+
+    @Override
+    public void onFailure(String message, Throwable throwable) {
+        Log.d(TAG, "Failed: " + message);
+    }
+
+    @Override
+    public void showLog(String log, @Nullable Throwable throwable) {
+        Log.d(TAG, "Log: " + log);
+    }
+});
+
+// For showing the watermark without a callback
+AppWaterMarkBuilder.showWatermark();
+
+// For showing the watermark with a callback
+AppWaterMarkBuilder.showWatermark(new WatermarkListener() {
+    @Override
+    public void onSuccess() {
+        Log.d(TAG, "Successfully showing watermark");
+    }
+
+    @Override
+    public void onFailure(String message, Throwable throwable) {
+        Log.d(TAG, "Failed: " + message);
+    }
+
+    @Override
+    public void showLog(String log, @Nullable Throwable throwable) {
+        Log.d(TAG, "Log: " + log);
+    }
+});
+```
+
+### Kotlin
+
+```kotlin
+doConfigure()
+    .setAppCompatActivity(this@MainActivity)
+    .setWatermarkProperty(R.layout.layout_water_mark)
+    // You can also set opacity or opacity with a default background color.
+    // Just call like that ".setWatermarkProperty(R.layout.layout_water_mark, 40, R.color.colorAccent)"
+    .showWatermarkAfterConfig(object : WatermarkListener { // This callback is also optional.
+        override fun onSuccess() {
+            Log.d(TAG, "Successfully showing watermark")
+        }
+
+        override fun onFailure(message: String?, throwable: Throwable?) {
+            Log.d(TAG, "Failed: $message")
+        }
+
+        override fun showLog(log: String?, throwable: Throwable?) {
+            Log.d(TAG, "Log: $log")
+        }
+    })
+
+// Then you can hide and show the watermark from anywhere in your app.
+
+// For hiding the watermark without a callback
+AppWaterMarkBuilder.hideWatermark()
+
+// For hiding the watermark with a callback
+AppWaterMarkBuilder.hideWatermark(object : WatermarkListener {
+    override fun onSuccess() {
+        Log.d(TAG, "Successfully hiding watermark")
+    }
+
+    override fun onFailure(message: String?, throwable: Throwable?) {
+        Log.d(TAG, "Failed: $message")
+    }
+
+    override fun showLog(log: String?, throwable: Throwable?) {
+        Log.d(TAG, "Log: $log")
+    }
+})
+
+// For showing the watermark without a callback
+AppWaterMarkBuilder.showWatermark()
+
+// For showing the watermark with a callback
+AppWaterMarkBuilder.showWatermark(object : WatermarkListener {
+    override fun onSuccess() {
+        Log.d(TAG, "Successfully showing watermark")
+    }
+
+    override fun onFailure(message: String?, throwable: Throwable?) {
+        Log.d(TAG, "Failed: $message")
+    }
+
+    override fun showLog(log: String?, throwable: Throwable?) {
+        Log.d(TAG, "Log: $log")
+    }
+})
+```
+
+In the code snippets, I have removed the comments to make the code more concise and readable while preserving its functionality.
 
 <h1 align="center">Privacy Policy</h1>
 
