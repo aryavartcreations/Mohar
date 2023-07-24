@@ -169,8 +169,6 @@ AppWaterMarkBuilder.showWatermark(object : WatermarkListener {
 })
 ```
 
-In the code snippets, I have removed the comments to make the code more concise and readable while preserving its functionality.
-
 <h1 align="center">Privacy Policy</h1>
 
 The Privacy Policy respects and protects the individual privacy of all users of the Privacy Policy
