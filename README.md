@@ -1,3 +1,21 @@
+# Mohar - The image saviour
+
+Mohar is not just an ordinary watermarking app; it's a powerful tool designed to safeguard your images with a plethora of customizable features for adding watermarks. With Mohar, your images are shielded with an extra layer of protection, ensuring that your creative work remains uniquely yours.
+
+What sets Mohar apart from the rest is its extensive range of advanced functionalities. Whether you want to add text-based watermarks, logos, or intricate designs, Mohar empowers you to do so effortlessly. You have complete control over the size, position, transparency, and style of your watermarks, allowing you to achieve the perfect blend of protection and aesthetic appeal.
+
+Moreover, the best part about Mohar is that it comes absolutely free of charge, making it an ideal choice for both amateur photographers and professionals alike. You no longer need to worry about investing in expensive watermarking software; Mohar provides a top-tier solution without costing you a penny.
+
+Preserving your intellectual property and preventing unauthorized use of your images has never been easier. With Mohar by your side, you can confidently share your work online, knowing that your creativity is safeguarded from misuse. Experience the seamless integration of security and artistry with Mohar - the ultimate watermarking app.
+
+# Gallery
+
+![2](https://github.com/aryavartcreations/Mohar/assets/117010357/b6741b33-1460-4244-b0b1-415926e7903b)
+![3](https://github.com/aryavartcreations/Mohar/assets/117010357/6889e392-e71b-4e54-825c-9247f5ffd076)
+![4](https://github.com/aryavartcreations/Mohar/assets/117010357/183f6fff-63f6-474b-9006-ddad9a5cbfcd)
+![5](https://github.com/aryavartcreations/Mohar/assets/117010357/1a852079-fd42-4fbb-ab4e-e86d3722225b)
+
+
 <h1 align="center">Privacy Policy</h1>
 
 The Privacy Policy respects and protects the individual privacy of all users of the Privacy Policy
